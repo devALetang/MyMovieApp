@@ -16,7 +16,6 @@ function getMovies(url) {
         console.log(data.results)
         showMovies(data.results)
     });
-
 }
 
 function showMovies(data) {
@@ -59,5 +58,4 @@ form.addEventListener('submit', (e) => {
         getMovies(searchURL+'&query='+searchTerm)
     }else
         getMovies(API_URL)
-
 })

@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    background-color: green;
+    background-color: black;
 }
 
 header {
@@ -55,14 +55,16 @@ main {
 }
 
 .movie_info {
-    background-color: blue;
+    background-color: grey;
     padding: 0.25rem 0.5rem;
     border-radius: 3px;
     font-weight: bold;
+    height: 100%;
+    font-size: 20px;
 }
 
 .movie_info span.green {
-    color: lightgreen
+    color: green
 }
 
 .movie_info span.orange {
