@@ -56,6 +56,7 @@ main {
 
 .movie_info {
     background-color: grey;
+    color: black;
     padding: 0.25rem 0.5rem;
     border-radius: 3px;
     font-weight: bold;
@@ -73,4 +74,60 @@ main {
 
 .movie_info span.red {
     color: red;
+}
+
+.modal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.modal div {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 1000px;
+    max-height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.modal img {
+    max-width: 400px;
+    height: 100%;
+    margin-right: 20px;
+    gap: 50px;
+}
+
+.modal button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 530px;
+    height: 328px;
 }
