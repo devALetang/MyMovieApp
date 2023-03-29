@@ -76,7 +76,6 @@ function showMovieDetails(id) {
         .then(movie => {
             // Créer une div pour afficher les informations du film
             const modalContent = document.createElement('div');
-            modalContent.style.overflowY = 'auto'; // Ajouter un style pour le scroll vertical
             modalContent.innerHTML = `
             <section>
                 <img src="${IMG_URL+movie.poster_path}" alt="${movie.title}">
