@@ -105,11 +105,11 @@ function showMovieDetails(id) {
 
             // Ajouter un écouteur d'événement click au bouton de fermeture de la modal
             const closeButton = document.createElement('button');
-            closeButton.innerText = 'Close';
+            closeButton.innerText = 'X';
             closeButton.addEventListener('click', () => {
                 modal.remove();
             });
-            modal.appendChild(closeButton);
+            modalContent.appendChild(closeButton);
         })
         .catch(err => console.error(err));
 }

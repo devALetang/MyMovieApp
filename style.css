@@ -110,8 +110,9 @@ main {
 }
 
 .modal button {
-    margin-top: 20px;
-    padding: 10px 20px;
+    width: 50px;
+    height: 40px;
+    padding: 10px;
     background-color: red;
     color: #fff;
     border: none;
