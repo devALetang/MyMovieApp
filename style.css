@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -15,7 +16,7 @@ header {
 
 .search {
     background-color: white;
-    border: 2px solid;
+    border: 2px solid red;
     padding: 0.5rem 1rem;
     border-radius: 50px;
     font-size: 1rem;
@@ -55,8 +56,8 @@ main {
 }
 
 .movie_info {
-    background-color: grey;
-    color: black;
+    background-color: black;
+    color: white;
     padding: 0.25rem 0.5rem;
     border-radius: 3px;
     font-weight: bold;
@@ -91,13 +92,14 @@ main {
 }
 
 .modal div {
-    background-color: #fff;
+    background-color: black;
     padding: 20px;
     max-width: 1000px;
     max-height: 800px;
     width: 100%;
     display: flex;
     flex-direction: row;
+    color: white;
 }
 
 .modal img {
@@ -110,7 +112,7 @@ main {
 .modal button {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: red;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -130,4 +132,8 @@ main {
     left: 0;
     width: 530px;
     height: 328px;
+}
+
+.mdtitre {
+    font-size: 2rem;
 }

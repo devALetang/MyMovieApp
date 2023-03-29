@@ -81,7 +81,7 @@ function showMovieDetails(id) {
                 <img src="${IMG_URL+movie.poster_path}" alt="${movie.title}">
             </section>
             <section>
-                <h2>${movie.title}</h2>
+                <h2 class='mdtitre'>${movie.title}</h2>
                 <p>${movie.overview}</p>
                 <p>Release date: ${movie.release_date}</p>
                 <p>Rating: ${movie.vote_average}</p>
@@ -91,7 +91,7 @@ function showMovieDetails(id) {
                 <section class="video-container">
                     <iframe width="560" height="315" src="${getTrailerUrl(movie.videos.results)}" frameborder="0" allowfullscreen></iframe>
                 </section>
-            </section>>
+            </section>
             
             `;
 
