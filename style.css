@@ -21,6 +21,8 @@ header {
     border-radius: 50px;
     font-size: 1rem;
     color: black;
+    width: 400px;
+    text-align: center;
 }
 
 main {

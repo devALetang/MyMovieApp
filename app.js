@@ -12,6 +12,8 @@ const search = document.getElementById('search');
 // On récupère les films à partir de l'API en utilisant fetch et on met à jour la liste des films à afficher en utilisant la fonction showMovies.
 getMovies(API_URL)
 
+
+// Récupérer les informations du film depuis l'API
 function getMovies(url) {
 
     fetch(url).then(res => res.json()).then(data => {
@@ -22,7 +24,11 @@ function getMovies(url) {
 
 function showMovies(data) {
     main.innerHTML = '';
-
+    
+    // Trier les films par note de la plus grande à la plus petite
+    data.sort((a, b) => b.vote_average - a.vote_average);
+    
+    //pour chaque film créer une mise en page 
     data.forEach(movie => {
 
         const {title, poster_path, vote_average} = movie;
